@@ -29,5 +29,5 @@ sub vcl_deliver {
 		set req.http.x-cache = req.http.x-cache + " cached" ;
 	}
 	# uncomment the following line to show the information in the response
-	# set resp.http.x-cache = req.http.x-cache;
+        set resp.http.x-cache = req.http.x-cache;
 }
